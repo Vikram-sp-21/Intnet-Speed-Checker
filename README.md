@@ -26,7 +26,7 @@ internet-speed-checker
 
 1. **Clone the repository**:
    ```
-   git clone <repository-url>
+   git clone https://github.com/Vikram-sp-21/Intnet-Speed-Checker
    cd internet-speed-checker
    ```
 
