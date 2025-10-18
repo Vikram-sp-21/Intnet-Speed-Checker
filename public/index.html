@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Internet Speed Checker</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- start screen: full viewport, centered circular button -->
+    <div id="start-screen" class="start-screen">
+        <button id="start-test" class="start-btn" aria-label="Start speed test">
+            <span class="label">Start</span>
+        </button>
+    </div>
+
+    <!-- main app container (hidden until st,art) -->
+    <main id="app" class="container hidden" role="main" aria-live="polite">
+        <h1>Check Your Internet Speed</h1>
+
+        <div class="controls">
+            <label for="upload-size">Upload size:
+                <select id="upload-size">
+                    <option value="1">1 MB</option>
+                    <option value="2" selected>2 MB</option>
+                    <option value="5">5 MB</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="speedometer-wrap screen">
+            <canvas id="speedometer" width="420" height="240" aria-label="Speedometer"></canvas>
+            <div class="speed-readout">
+                <div class="big" id="download-display">-- Mbps</div>
+                <div class="small">Current</div>
+                <div class="mini">DL: <span id="dl-mini">--</span> • UL: <span id="ul-mini">--</span></div>
+            </div>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Results:</h2>
+            <p id="download-speed">Download Speed: <span>--</span></p>
+            <p id="upload-speed">Upload Speed: <span>--</span></p>
+            <p id="ping">Ping: <span>--</span></p>
+            <p id="notes" class="notes"></p>
+        </div>
+    </main>
+
+    <script type="module" src="js/ui.js"></script>
+</body>
+</html>
