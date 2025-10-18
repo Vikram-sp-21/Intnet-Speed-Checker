@@ -1,0 +1,22 @@
+{
+  "name": "internet-speed-checker",
+  "version": "1.0.0",
+  "description": "A simple web application to check internet speed.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "internet",
+    "speed",
+    "checker",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
